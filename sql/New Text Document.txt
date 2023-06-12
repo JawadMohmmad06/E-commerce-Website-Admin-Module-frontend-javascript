@@ -1,0 +1,198 @@
+create table test.adminauthority
+(
+    id   bigint auto_increment
+        primary key,
+    name varchar(20) null
+);
+
+
+
+create table test.adminuser
+(
+    id       bigint auto_increment
+        primary key,
+    username varchar(25)  null,
+    gender   varchar(25)  null,
+    dob      date         null,
+    email    varchar(25)  null,
+    phone    varchar(25)  null,
+    password varchar(200) null
+);
+
+
+
+create table test.adminuser_authority_map
+(
+    id                bigint auto_increment
+        primary key,
+    adminuser_id      bigint null,
+    adminauthority_id bigint null,
+    constraint adminuser_authority_map_adminauthority_id_fk
+        foreign key (adminauthority_id) references test.adminauthority (id),
+    constraint adminuser_authority_map_adminuser_id_fk
+        foreign key (adminuser_id) references test.adminuser (id)
+);
+
+
+
+create table test.authority
+(
+    id   bigint auto_increment
+        primary key,
+    name varchar(20) null
+);
+
+create table test.busgrowth
+(
+    id    bigint auto_increment
+        primary key,
+    Year  varchar(25) null,
+    sales double      null
+);
+
+
+create table test.calcu
+(
+    id  int auto_increment
+        primary key,
+    ope varchar(20) null,
+    sum float       null
+);
+
+create table test.calcu
+(
+    id  int auto_increment
+        primary key,
+    ope varchar(20) null,
+    sum float       null
+);
+create table test.variables
+(
+    id            bigint auto_increment
+        primary key,
+    category      varchar(50) null,
+    zone          varchar(50) null,
+    basic_salary  varchar(50) null,
+    house_rent    varchar(50) null,
+    medical       varchar(50) null,
+    conve         varchar(50) null,
+    festibal      varchar(50) null,
+    investment    varchar(50) null,
+    taxble_income varchar(50) null,
+    total_tax     varchar(50) null,
+    m_tax         varchar(50) null,
+    userid        bigint      null,
+    tax_year      varchar(25) null,
+    constraint variables_user_id_fk
+        foreign key (userid) references test.user (id)
+);
+
+
+
+create table test.product
+(
+    id            bigint auto_increment
+        primary key,
+    bookname      varchar(25) null,
+    bookcondition varchar(25) null,
+    category      varchar(25) null,
+    bookdetails   varchar(25) null,
+    authorname    varchar(25) null,
+    sellerid      bigint      null,
+    price         double      null
+);
+
+create table test.registration
+(
+    id               bigint auto_increment
+        primary key,
+    uname            varchar(25)  null,
+    gender           varchar(25)  null,
+    dob              date         null,
+    email            varchar(25)  null,
+    phone            varchar(25)  null,
+    user_type        varchar(25)  null,
+    shop_name        varchar(25)  null,
+    passwordd        varchar(100) null,
+    confirm_password varchar(100) null,
+    varify           tinyint(1)   null
+);
+
+create table test.taxslnrate
+(
+    id                  bigint auto_increment
+        primary key,
+    genaral1stSlab      int         null,
+    femalgenaral1stSlab int         null,
+    disa1stSlab         int         null,
+    ff1stslab           int         null,
+    firstSlab           int         null,
+    sslab               int         null,
+    tslab               int         null,
+    fslab               int         null,
+    restslab            int         null,
+    firstSlabRate       float       null,
+    secSlabRate         float       null,
+    thSlabRate          float       null,
+    fSlabRate           float       null,
+    reSlabRate          float       null,
+    tax_year            varchar(20) null
+);
+
+create table test.trackorder
+(
+    id          bigint auto_increment
+        primary key,
+    productid   bigint      null,
+    orderdate   date        null,
+    arrivaldate date        null,
+    status      varchar(25) null
+);
+
+create table test.user
+(
+    id        bigint auto_increment
+        primary key,
+    email     varchar(25)  null,
+    phone     varchar(25)  null,
+    dob       date         null,
+    firstname varchar(25)  null,
+    lastname  varchar(25)  null,
+    address   varchar(100) null,
+    username  varchar(25)  null,
+    password  varchar(125) null
+);
+
+create table test.user_authority_map
+(
+    id           bigint auto_increment
+        primary key,
+    user_id      bigint null,
+    authority_id bigint null,
+    constraint user_authority_map_authority_id_fk
+        foreign key (authority_id) references test.authority (id),
+    constraint user_authority_map_user_id_fk
+        foreign key (user_id) references test.user (id)
+);
+
+create table test.variables
+(
+    id            bigint auto_increment
+        primary key,
+    category      varchar(50) null,
+    zone          varchar(50) null,
+    basic_salary  varchar(50) null,
+    house_rent    varchar(50) null,
+    medical       varchar(50) null,
+    conve         varchar(50) null,
+    festibal      varchar(50) null,
+    investment    varchar(50) null,
+    taxble_income varchar(50) null,
+    total_tax     varchar(50) null,
+    m_tax         varchar(50) null,
+    userid        bigint      null,
+    tax_year      varchar(25) null,
+    constraint variables_user_id_fk
+        foreign key (userid) references test.user (id)
+);
+

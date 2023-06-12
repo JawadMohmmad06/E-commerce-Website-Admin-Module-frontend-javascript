@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Track Order</title>
+	<link rel="stylesheet" type="text/css" href="css/seller.css">
+	<script src="js/trackOrder.js"></script>
+</script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+  <script>  
+$(function(){ 
+  $("#header").load("header.html");  
+ 
+}); 
+</script>
+</head>
+<body onload="getorder()">
+
+	<div id="header"></div>
+	<div id="form">
+<form onsubmit="return deletet(this)" novalidate >
+	<label for="id">Delete </label>
+	<input type="number" name="id" id="id">
+	<br><br>
+	
+	<br><br>
+	<input type="submit" name="submit" id="submit" value="Delete" >
+	
+</form>
+<p id="response"></p>
+</div> 
+<table id="tt">
+	<thead>
+		<th>Id</th>
+		<th>Product Id</th>
+		<th>Order Date</th>
+		<th>Arival Date</th>
+		<th>Status</th>
+	</thead>
+<tbody id="table">
+</tbodey>
+	</table>
+	
+</body>
+</html>

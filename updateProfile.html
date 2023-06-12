@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+	<script src="js/update.js"></script>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+	<link rel="stylesheet" type="text/css" href="css/updateProfile.css">
+	<script>  
+$(function(){ 
+  $("#header").load("header.html");  
+ 
+}); 
+</script> 
+</head>
+<body onload="update()">
+	<div id="header"></div> 
+	<div id="form">
+<form  novalidate onsubmit="return profileupdate()">
+	<label for="username">Usernamee</label>
+	<input type="text" name="username" id="username">
+	
+	
+	<br><br>
+	<label for="email">Email</label>
+	<input type="email" name="email" id="email">
+	
+	<br><br>
+	<label for="phone">phone NUmber</label>
+	<input type="text" name="phone" id="phone">
+	<br><br>
+	<input type="submit" name="submit" id="submit" value="registration">
+	
+</form>
+<p id="response"></p>
+</div>
+
+</body>
+</html>

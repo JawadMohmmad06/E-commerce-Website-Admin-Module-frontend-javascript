@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+	<script src="js/regis.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reg.css">
+</head>
+<body>
+	<div id="form">
+<form onsubmit="return reg(this)" novalidate >
+	<label for="username">Usernamee</label>
+	<input type="text" name="username" id="username">
+	<br><br>
+	<label for="password">Password</label>
+	<input type="text" name="password" id="password">
+	<br><br>
+	<label for="gender">Gender</label>
+	<input type="radio" name="gender" id="gender" value="MALE" checked>Male
+	<input type="radio" name="gender" id="gender" value="FEMALE">Female
+	<br><br>
+	<label for="email">Email</label>
+	<input type="email" name="email" id="email">
+	<br><br>
+	<label for="dob">Date of Birth</label>
+	<input type="date" name="dob" id="dob">
+	<br><br>
+	<label for="phone">phone NUmber</label>
+	<input type="text" name="phone" id="phone">
+	<br><br>
+	<input type="submit" name="submit" id="submit" value="registration">
+	
+</form>
+<h4>If you already have an account <a href="http://localhost:8070/Midtask_war_exploded/defult">login</a></h4>
+<h4> <a href="forgetpass.html">Forgot Pass?</a></h4>
+
+<p id="response"></p>
+</div>
+</body>
+</html>

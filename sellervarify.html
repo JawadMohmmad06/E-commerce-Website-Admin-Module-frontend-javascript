@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+	<script src="js/varify.js"></script>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+	<link rel="stylesheet" type="text/css" href="css/seller.css">
+	<script>  
+$(function(){ 
+  $("#header").load("header.html");  
+ 
+}); 
+</script>
+</head>
+<body onload="getseller()">
+	<div id="header"></div> 
+	<div id="form">
+<form onsubmit="return varify(this)" novalidate >
+	<label for="id">Varify </label>
+	<input type="number" name="id" id="id">
+	<br><br>
+	
+
+	<input type="submit" name="submit" id="submit" value="varify" onclick="getseller()">
+	
+</form>
+<p id="response"></p>
+</div> 
+<table id="tt">
+	<thead>
+		<th>Id</th>
+		<th>User Name</th>
+		<th>Date of birth</th>
+		<th>Gender</th>
+		<th>Email</th>
+		
+		<th>Varified</th>
+	</thead>
+<tbody id="table">
+</tbodey>
+	</table>
+	
+</body>
+</html>

@@ -1,0 +1,157 @@
+
+#form1
+{
+	width: 300px;
+	height: 150px;
+	background-color:#2B3B32 ;
+
+	position: absolute;
+	top: 550px;
+	left: 370px;
+	border-radius: 10px;
+	padding: 25px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+
+}
+#form1 label,p
+{
+	color: white;
+	width: 230px;
+	font-family: sans-serif;
+	text-align: center;
+
+}
+#form1 a
+{
+	color: blue;
+	width: 230px;
+	font-family: sans-serif;
+	
+
+}
+#form1 fieldset
+{
+ border-color: blue;
+}
+#form1 legend
+{
+	color: black;
+	width: 150px;
+	font-family: sans-serif;
+	
+}
+#del
+{
+	width: 50%;
+	height: 40px;
+	background: #4F6B5C;
+	border: 2px solid green;
+	margin-top: 13px;
+	color: white;
+	font-size: 15px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#del:hover
+{
+	background-color: white;
+	color: blue;
+}
+#submit
+{
+	width: 50%;
+	height: 40px;
+	background: #4F6B5C;
+	border: 2px solid green;
+	margin-top: 13px;
+	color: white;
+	font-size: 15px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#submit:hover
+{
+	background-color: white;
+	color: blue;
+}
+
+#form
+{
+	width: 300px;
+	height: 150px;
+	background-color:#2B3B32 ;
+
+	position: absolute;
+	top: 550px;
+	left: 50px;
+	border-radius: 10px;
+	padding: 25px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+
+}
+#form label,p
+{
+	color: white;
+	width: 230px;
+	font-family: sans-serif;
+	text-align: center;
+
+}
+#form a
+{
+	color: blue;
+	width: 230px;
+	font-family: sans-serif;
+	
+
+}
+#form fieldset
+{
+ border-color: blue;
+}
+#form legend
+{
+	color: black;
+	width: 150px;
+	font-family: sans-serif;
+	
+}
+#tt
+{
+	position: absolute;
+	top: 80px;
+	border-collapse: collapse;
+	margin: 25px ;
+	font-size: 0.9em;
+	min-height: 300px;
+	left: 900px;
+
+
+}
+#tt th
+{
+	background-color: #009279;
+	color: white;
+	text-align: left;
+	font-weight: bold;
+}
+#tt td
+{
+	padding: 12px 15px;
+}
+#tt tr
+{
+	border-bottom: 1px solid black;
+}
+#tt tr:nth-of-type(odd)
+{
+	background-color: #009279;
+}
+#tt tr:nth-of-type(even)
+{
+	background-color: #2B3B32;
+}
